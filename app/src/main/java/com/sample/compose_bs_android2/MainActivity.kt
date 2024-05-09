@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
 import com.sample.compose_bs_android2.ui.theme.ComposeBSAndroid2Theme
 
 class MainActivity : ComponentActivity() {
@@ -19,29 +20,20 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ComposeBSAndroid2Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                Main()
             }
         }
     }
 }
 
+
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun Main(modifier: Modifier = Modifier) {
+    SharedElementScreen()
 }
 
-@Preview(showBackground = true)
+@Preview
 @Composable
-fun GreetingPreview() {
-    ComposeBSAndroid2Theme {
-        Greeting("Android")
-    }
+private fun MainPreview() {
+    Main()
 }
