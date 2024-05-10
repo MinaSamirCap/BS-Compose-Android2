@@ -63,6 +63,9 @@ dependencies {
     implementation(libs.androidx.compose.animation)
     implementation(libs.androidx.compose.navigation)
 
+    implementation(libs.squareup.retrofit)
+    implementation(libs.squareup.retrofit.moshi.converter)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
