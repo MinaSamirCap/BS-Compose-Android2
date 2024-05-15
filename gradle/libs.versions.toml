@@ -9,9 +9,10 @@ lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.9.0"
 composeBom = "2024.05.00"
 composeAnimation = "1.7.0-alpha07"
-composeNavigation = "2.7.7"
+composeNavigation = "2.8.0-alpha08"
 squareupRetrofit = "2.9.0"
 squareupLogger = "5.0.0-alpha.2"
+serialization = "1.6.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,7 +37,9 @@ squareup-retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "c
 squareup-retrofit-moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "squareupRetrofit" }
 squareup-logger = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareupLogger" }
 
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
