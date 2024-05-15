@@ -14,6 +14,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
 import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
+import com.sample.compose_bs_android2.mine.shortcuts.ShortcutsScreen
 import com.sample.compose_bs_android2.template.TemplateScreen
 import com.sample.compose_bs_android2.ui.theme.ComposeBSAndroid2Theme
 
@@ -35,7 +36,8 @@ fun Main(modifier: Modifier = Modifier) {
     //TemplateScreen()
     //SharedElementScreen()
     //PullToRefreshScreen()
-    NavigationSafeScreen()
+    //NavigationSafeScreen()
+    ShortcutsScreen()
 }
 
 @Preview

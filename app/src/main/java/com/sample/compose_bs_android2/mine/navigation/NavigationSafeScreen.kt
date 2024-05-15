@@ -68,4 +68,4 @@ private fun NavigationSafeScreenPreview() {
 }
 
 /// references
-// https://www.youtube.com/watch?v=e20DAyE0YsY
+// https://www.youtube.com/watch?v=AIC_OFQ1r3k
