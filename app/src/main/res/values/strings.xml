@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Compose-BS-Android2</string>
+    <string name="short_label">Waring</string>
+    <string name="long_label">This is the waring message</string>
+    <string name="disabled_message">This option is no longer available</string>
 </resources>
