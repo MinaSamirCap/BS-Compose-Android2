@@ -13,6 +13,7 @@ composeNavigation = "2.8.0-alpha08"
 squareupRetrofit = "2.9.0"
 squareupLogger = "5.0.0-alpha.2"
 serialization = "1.6.3"
+coil = "2.6.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +39,8 @@ squareup-retrofit-moshi-converter = { group = "com.squareup.retrofit2", name = "
 squareup-logger = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareupLogger" }
 
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
