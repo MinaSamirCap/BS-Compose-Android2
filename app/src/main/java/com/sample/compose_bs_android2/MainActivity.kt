@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.previewMode.PreviewModeScreen
 import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
@@ -49,7 +50,8 @@ fun Main(
     //PullToRefreshScreen()
     //NavigationSafeScreen()
     //ShortcutScreen(intent = intent)
-    PreviewModeScreen()
+    //PreviewModeScreen()
+    MultiBackstackScreen()
 }
 
 @Preview
