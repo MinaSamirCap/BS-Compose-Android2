@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.previewMode.PreviewModeScreen
@@ -51,7 +52,8 @@ fun Main(
     //NavigationSafeScreen()
     //ShortcutScreen(intent = intent)
     //PreviewModeScreen()
-    MultiBackstackScreen()
+    //MultiBackstackScreen()
+    ListDetailsWithNavigationScreen()
 }
 
 @Preview

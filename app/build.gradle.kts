@@ -41,7 +41,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.13"
     }
     packaging {
         resources {
@@ -63,6 +63,9 @@ dependencies {
 
     implementation(libs.androidx.compose.animation)
     implementation(libs.androidx.compose.navigation)
+
+    implementation(libs.androidx.compose.material3.adaptive.navigation)
+    implementation(libs.androidx.compose.material3.adaptive.navigation.suits)
 
     implementation(libs.squareup.retrofit)
     implementation(libs.squareup.retrofit.moshi.converter)
