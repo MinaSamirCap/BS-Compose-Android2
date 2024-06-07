@@ -14,6 +14,7 @@ import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.navigationSuite.NavigationSuiteScreen
 import com.sample.compose_bs_android2.mine.previewMode.PreviewModeScreen
 import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
+import com.sample.compose_bs_android2.mine.shake.ShakeScreen
 import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
 import com.sample.compose_bs_android2.mine.shortcuts.ShortcutScreen
 import com.sample.compose_bs_android2.template.TemplateScreen
@@ -55,7 +56,8 @@ fun Main(
     //PreviewModeScreen()
     //MultiBackstackScreen()
     //ListDetailsWithNavigationScreen()
-    NavigationSuiteScreen()
+    //NavigationSuiteScreen()
+    ShakeScreen()
 }
 
 @Preview
