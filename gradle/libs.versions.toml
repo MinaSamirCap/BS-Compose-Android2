@@ -6,6 +6,7 @@ junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.8.0"
+lifecycleViewmodelCompose = "2.8.0"
 activityCompose = "1.9.0"
 composeBom = "2024.05.00"
 composeAnimation = "1.7.0-beta02"
@@ -14,8 +15,10 @@ material3Adaptive = "1.0.0-beta02"
 adaptiveNavigationSuite = "1.0.0-alpha07"
 squareupRetrofit = "2.9.0"
 squareupLogger = "5.0.0-alpha.2"
+moshi = "1.14.0"
 serialization = "1.6.3"
 coil = "2.6.0"
+koin = "3.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -23,6 +26,7 @@ junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
 androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
 androidx-compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "composeAnimation" }
@@ -41,10 +45,16 @@ squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", versi
 squareup-retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "squareupRetrofit" }
 squareup-retrofit-moshi-converter = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "squareupRetrofit" }
 squareup-logger = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "squareupLogger" }
+squareup-moshie = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
+squareup-moshie-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
 
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+koin_core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin_android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin_compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

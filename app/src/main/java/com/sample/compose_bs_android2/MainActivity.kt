@@ -17,6 +17,7 @@ import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
 import com.sample.compose_bs_android2.mine.shake.ShakeScreen
 import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
 import com.sample.compose_bs_android2.mine.shortcuts.ShortcutScreen
+import com.sample.compose_bs_android2.tasks.task1Articles.Task1ArticlesScreen
 import com.sample.compose_bs_android2.template.TemplateScreen
 import com.sample.compose_bs_android2.ui.theme.ComposeBSAndroid2Theme
 
@@ -57,7 +58,11 @@ fun Main(
     //MultiBackstackScreen()
     //ListDetailsWithNavigationScreen()
     //NavigationSuiteScreen()
-    ShakeScreen()
+    //ShakeScreen()
+
+
+    //// Tasks ...
+    Task1ArticlesScreen()
 }
 
 @Preview

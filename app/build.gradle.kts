@@ -53,7 +53,10 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
@@ -68,11 +71,19 @@ dependencies {
     implementation(libs.androidx.compose.material3.adaptive.navigation.suits)
 
     implementation(libs.squareup.retrofit)
+    implementation(libs.squareup.logger)
     implementation(libs.squareup.retrofit.moshi.converter)
 
     implementation(libs.kotlinx.serialization.json)
 
     implementation(libs.coil)
+
+    implementation(libs.koin.core)
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+
+    implementation(libs.squareup.moshie)
+    implementation(libs.squareup.moshie.kotlin)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
