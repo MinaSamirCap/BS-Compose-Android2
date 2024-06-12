@@ -3,6 +3,10 @@ package com.sample.compose_bs_android2.tasks.task1Articles
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -10,7 +14,12 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.sample.compose_bs_android2.tasks.task1Articles.components.ArticleItem
+import com.sample.compose_bs_android2.tasks.task1Articles.network.provideArticlesApi
+import com.sample.compose_bs_android2.tasks.task1Articles.network.provideHttpLogger
+import com.sample.compose_bs_android2.tasks.task1Articles.network.provideRetrofit
 import kotlinx.coroutines.launch
 import org.koin.androidx.compose.koinViewModel
 
@@ -21,7 +30,9 @@ fun Task1ArticlesScreen(
 ) {
 
     val scope = rememberCoroutineScope()
-    val title = viewModel.title.collectAsStateWithLifecycle()
+    val loading = viewModel.loading.collectAsStateWithLifecycle()
+    val response = viewModel.response.collectAsStateWithLifecycle()
+
     Column(
         modifier = modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -34,16 +45,33 @@ fun Task1ArticlesScreen(
         }) {
             Text(text = "Get Articles")
         }
-        Text(text = title.value)
+        Text(text = loading.value)
+
+        if (response.value.results != null) {
+            LazyColumn(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                itemsIndexed(response.value.results!!,
+                    key = { index, item ->
+                        index.toString()
+                    }, itemContent = { index, item ->
+                        ArticleItem(item = item!!)
+                    })
+            }
+        }
     }
 }
 
 @Preview
 @Composable
 private fun Task1ArticlesScreenPreview() {
-    Task1ArticlesScreen()
+    Task1ArticlesScreen(
+        viewModel = ArticlesViewModel(provideArticlesApi(provideRetrofit(provideHttpLogger())))
+    )
 }
-
 /// references
 
 /// MVI:

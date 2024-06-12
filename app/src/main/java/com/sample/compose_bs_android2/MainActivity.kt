@@ -62,11 +62,11 @@ fun Main(
     //NavigationSuiteScreen()
     //ShakeScreen()
     //WaterBottleScreen()
-    SolidPrincipleScreen()
+    //SolidPrincipleScreen()
 
 
     //// Tasks ...
-    //Task1ArticlesScreen()
+    Task1ArticlesScreen()
 }
 
 @Preview
