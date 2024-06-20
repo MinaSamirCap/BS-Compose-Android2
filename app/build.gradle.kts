@@ -85,6 +85,8 @@ dependencies {
     implementation(libs.squareup.moshie)
     implementation(libs.squareup.moshie.kotlin)
 
+    implementation(libs.itext.core)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

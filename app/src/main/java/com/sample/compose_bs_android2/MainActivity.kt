@@ -12,6 +12,7 @@ import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigation
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.navigationSuite.NavigationSuiteScreen
+import com.sample.compose_bs_android2.mine.pdf.PdfGeneratorScreen
 import com.sample.compose_bs_android2.mine.previewMode.PreviewModeScreen
 import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
 import com.sample.compose_bs_android2.mine.shake.ShakeScreen
@@ -63,10 +64,11 @@ fun Main(
     //ShakeScreen()
     //WaterBottleScreen()
     //SolidPrincipleScreen()
+    PdfGeneratorScreen()
 
 
     //// Tasks ...
-    Task1ArticlesScreen()
+    //Task1ArticlesScreen()
 }
 
 @Preview

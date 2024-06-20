@@ -19,6 +19,7 @@ moshi = "1.14.0"
 serialization = "1.6.3"
 coil = "2.6.0"
 koin = "3.4.0"
+itextCore = "7.2.5"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -55,6 +56,8 @@ coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 koin_core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
 koin_android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
 koin_compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+
+itext_core = { group = "com.itextpdf", name = "itext7-core", version.ref = "itextCore" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
