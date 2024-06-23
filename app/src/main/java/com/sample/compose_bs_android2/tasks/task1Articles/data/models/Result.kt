@@ -51,3 +51,29 @@ data class Result(
     @Json(name = "eta_id")
     val etaId: Int?
 )
+
+
+val dummyArticleItem = Result(
+    title = "This is the title of article",
+    id = null,
+    media = null,
+    publishedDate = null,
+    type = null,
+    url = null,
+    byline = null,
+    abstract = null,
+    section = null,
+    subsection = null,
+    source = null,
+    uri = null,
+    etaId = null,
+    column = null,
+    desFacet = null,
+    geoFacet = null,
+    orgFacet = null,
+    perFacet = null,
+    assetId = null,
+    updated = null,
+    adxKeywords = null,
+    nytdsection = null
+)
