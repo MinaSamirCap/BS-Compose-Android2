@@ -8,20 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
-import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
-import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
-import com.sample.compose_bs_android2.mine.navigationSuite.NavigationSuiteScreen
-import com.sample.compose_bs_android2.mine.pdf.PdfGeneratorScreen
-import com.sample.compose_bs_android2.mine.previewMode.PreviewModeScreen
-import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
-import com.sample.compose_bs_android2.mine.shake.ShakeScreen
-import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
-import com.sample.compose_bs_android2.mine.shortcuts.ShortcutScreen
-import com.sample.compose_bs_android2.mine.solid.SolidPrincipleScreen
-import com.sample.compose_bs_android2.mine.waterBottle.WaterBottleScreen
-import com.sample.compose_bs_android2.tasks.task1Articles.Task1ArticlesScreen
-import com.sample.compose_bs_android2.template.TemplateScreen
+import com.sample.compose_bs_android2.tasks.task1Articles.ui.articles.ArticlesScreen
 import com.sample.compose_bs_android2.ui.theme.ComposeBSAndroid2Theme
 
 class MainActivity : ComponentActivity() {
@@ -64,11 +51,11 @@ fun Main(
     //ShakeScreen()
     //WaterBottleScreen()
     //SolidPrincipleScreen()
-    PdfGeneratorScreen()
+    //PdfGeneratorScreen()
 
 
     //// Tasks ...
-    //Task1ArticlesScreen()
+    ArticlesScreen()
 }
 
 @Preview

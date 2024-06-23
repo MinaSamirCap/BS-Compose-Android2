@@ -1,4 +1,4 @@
-package com.sample.compose_bs_android2.tasks.task1Articles
+package com.sample.compose_bs_android2.tasks.task1Articles.ui.articles
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.sample.compose_bs_android2.tasks.task1Articles.components.ArticleItem
+import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.ArticleItem
 import com.sample.compose_bs_android2.tasks.task1Articles.network.provideArticlesApi
 import com.sample.compose_bs_android2.tasks.task1Articles.network.provideHttpLogger
 import com.sample.compose_bs_android2.tasks.task1Articles.network.provideRetrofit
@@ -24,7 +24,7 @@ import kotlinx.coroutines.launch
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
-fun Task1ArticlesScreen(
+fun ArticlesScreen(
     modifier: Modifier = Modifier,
     viewModel: ArticlesViewModel = koinViewModel(),
 ) {
@@ -67,8 +67,8 @@ fun Task1ArticlesScreen(
 
 @Preview
 @Composable
-private fun Task1ArticlesScreenPreview() {
-    Task1ArticlesScreen(
+private fun ArticlesScreenPreview() {
+    ArticlesScreen(
         viewModel = ArticlesViewModel(provideArticlesApi(provideRetrofit(provideHttpLogger())))
     )
 }

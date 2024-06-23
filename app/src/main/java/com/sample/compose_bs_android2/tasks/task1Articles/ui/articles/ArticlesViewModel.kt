@@ -1,4 +1,4 @@
-package com.sample.compose_bs_android2.tasks.task1Articles
+package com.sample.compose_bs_android2.tasks.task1Articles.ui.articles
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

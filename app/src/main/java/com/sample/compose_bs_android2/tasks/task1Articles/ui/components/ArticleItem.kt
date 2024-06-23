@@ -1,4 +1,4 @@
-package com.sample.compose_bs_android2.tasks.task1Articles.components
+package com.sample.compose_bs_android2.tasks.task1Articles.ui.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
