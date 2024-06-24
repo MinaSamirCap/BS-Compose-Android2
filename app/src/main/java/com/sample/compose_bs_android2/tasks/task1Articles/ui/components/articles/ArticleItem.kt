@@ -17,6 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.sample.compose_bs_android2.tasks.task1Articles.data.models.Result
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.img.ArticleImg
+import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.img.imgArticleUrl
 
 @Composable
 fun ArticleItem(
@@ -32,7 +33,7 @@ fun ArticleItem(
             onItemClick?.invoke(item)
         }) {
 
-        ArticleImg(url = item.media?.get(0)?.mediaMetadata?.get(2)?.url)
+        ArticleImg(url = imgArticleUrl(item))
 
         Text(
             text = item.title!!,

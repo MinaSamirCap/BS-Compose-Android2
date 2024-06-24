@@ -36,7 +36,7 @@ fun ArticleImg(
                 .fillMaxWidth()
                 .height(280.dp),
             contentScale = ContentScale.Crop,
-            model = url ?: noImageFoundUrl, contentDescription = null
+            model = if (url.isNullOrEmpty()) noImageFoundUrl else url, contentDescription = null
         )
     }
 }

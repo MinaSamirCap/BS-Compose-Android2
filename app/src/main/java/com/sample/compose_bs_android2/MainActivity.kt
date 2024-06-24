@@ -20,7 +20,7 @@ import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
 import com.sample.compose_bs_android2.mine.shortcuts.ShortcutScreen
 import com.sample.compose_bs_android2.mine.solid.SolidPrincipleScreen
 import com.sample.compose_bs_android2.mine.waterBottle.WaterBottleScreen
-import com.sample.compose_bs_android2.tasks.task1Articles.ui.articles.ArticlesScreen
+import com.sample.compose_bs_android2.tasks.task1Articles.ui.navigation.ArticlesNavigationScreen
 import com.sample.compose_bs_android2.template.TemplateScreen
 import com.sample.compose_bs_android2.ui.theme.ComposeBSAndroid2Theme
 
@@ -68,7 +68,7 @@ fun Main(
 
 
     //// Tasks ...
-    ArticlesScreen()
+    ArticlesNavigationScreen()
 }
 
 @Preview

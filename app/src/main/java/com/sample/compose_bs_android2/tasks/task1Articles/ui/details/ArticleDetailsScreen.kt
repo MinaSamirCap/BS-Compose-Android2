@@ -28,14 +28,13 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.sample.compose_bs_android2.tasks.task1Articles.data.models.Result
-import com.sample.compose_bs_android2.tasks.task1Articles.data.models.dummyArticleItem
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.img.ArticleImg
+import com.sample.compose_bs_android2.tasks.task1Articles.ui.navigation.ArticlesRoute
 import com.sample.compose_bs_android2.utils.IntentUtil
 
 @Composable
 fun ArticleDetailsScreen(
-    item: Result,
+    item: ArticlesRoute.ArticleDetails,
     modifier: Modifier = Modifier,
     onCloseClick: (() -> Unit)? = null
 ) {
@@ -56,7 +55,7 @@ fun ArticleDetailsScreen(
             )
         }
 
-        ArticleImg(url = item.media?.get(0)?.mediaMetadata?.get(2)?.url)
+        ArticleImg(url = item.imageUrl)
 
         Spacer(modifier = Modifier.height(10.dp))
 
@@ -70,7 +69,7 @@ fun ArticleDetailsScreen(
 
         Spacer(modifier = Modifier.height(10.dp))
 
-        Text(text = "By ${item.byline}")
+        Text(text = item.by ?: "No name provided")
         Text(text = "Published ${item.publishedDate}")
 
         Spacer(modifier = Modifier.height(10.dp))
@@ -81,7 +80,7 @@ fun ArticleDetailsScreen(
                 .fillMaxWidth()
                 .clip(RoundedCornerShape(10.dp))
                 .clickable {
-                    IntentUtil.openBrowser(context, item.url)
+                    IntentUtil.openBrowser(context, item.articleUrl)
                 }
                 .background(color = MaterialTheme.colorScheme.background)
                 .padding(10.dp)
@@ -103,5 +102,13 @@ fun ArticleDetailsScreen(
 @Preview
 @Composable
 private fun ArticleDetailsScreenPreview() {
-    ArticleDetailsScreen(dummyArticleItem)
+    ArticleDetailsScreen(
+        ArticlesRoute.ArticleDetails(
+            title = "This is the title of article",
+            by = "Mina Samir",
+            publishedDate = "2 days ago",
+            imageUrl = null,
+            articleUrl = "https://www.google.com"
+        )
+    )
 }

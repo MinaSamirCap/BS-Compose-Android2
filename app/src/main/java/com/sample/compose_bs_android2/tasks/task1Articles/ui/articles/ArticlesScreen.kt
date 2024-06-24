@@ -22,6 +22,7 @@ import org.koin.androidx.compose.koinViewModel
 fun ArticlesScreen(
     modifier: Modifier = Modifier,
     viewModel: ArticlesViewModel = koinViewModel(),
+    onArticleClick: ((Result) -> Unit)? = null
 ) {
     val loading = viewModel.loading.collectAsStateWithLifecycle()
     val error = viewModel.error.collectAsStateWithLifecycle()
@@ -52,7 +53,7 @@ fun ArticlesScreen(
             ArticlesLazyColumn(
                 items = response.value.results!! as List<Result>,
                 onItemClick = {
-                    viewModel.onArticleClick(it)
+                    onArticleClick?.invoke(it)
                 })
         }
     }
