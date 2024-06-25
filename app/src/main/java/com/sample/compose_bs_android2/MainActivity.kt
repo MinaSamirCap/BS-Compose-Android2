@@ -8,6 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
@@ -65,10 +66,11 @@ fun Main(
     //WaterBottleScreen()
     //SolidPrincipleScreen()
     //PdfGeneratorScreen()
+    AnimationTypesScreen()
 
 
     //// Tasks ...
-    ArticlesNavigationScreen()
+    //ArticlesNavigationScreen()
 }
 
 @Preview
