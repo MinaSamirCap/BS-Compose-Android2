@@ -10,7 +10,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.sample.compose_bs_android2.tasks.task1Articles.data.models.Result
+import com.sample.compose_bs_android2.tasks.task1Articles.data.models.ArticleApiModel
 import com.sample.compose_bs_android2.tasks.task1Articles.network.provideArticlesApi
 import com.sample.compose_bs_android2.tasks.task1Articles.network.provideHttpLogger
 import com.sample.compose_bs_android2.tasks.task1Articles.network.provideRetrofit
@@ -22,7 +22,7 @@ import org.koin.androidx.compose.koinViewModel
 fun ArticlesScreen(
     modifier: Modifier = Modifier,
     viewModel: ArticlesViewModel = koinViewModel(),
-    onArticleClick: ((Result) -> Unit)? = null
+    onArticleClick: ((ArticleApiModel) -> Unit)? = null
 ) {
     val loading = viewModel.loading.collectAsStateWithLifecycle()
     val error = viewModel.error.collectAsStateWithLifecycle()
@@ -51,7 +51,7 @@ fun ArticlesScreen(
 
         if (response.value.results != null && !error.value) {
             ArticlesLazyColumn(
-                items = response.value.results!! as List<Result>,
+                items = response.value.results!! as List<ArticleApiModel>,
                 onItemClick = {
                     onArticleClick?.invoke(it)
                 })

@@ -66,11 +66,11 @@ fun Main(
     //WaterBottleScreen()
     //SolidPrincipleScreen()
     //PdfGeneratorScreen()
-    AnimationTypesScreen()
+    //AnimationTypesScreen()
 
 
     //// Tasks ...
-    //ArticlesNavigationScreen()
+    ArticlesNavigationScreen()
 }
 
 @Preview

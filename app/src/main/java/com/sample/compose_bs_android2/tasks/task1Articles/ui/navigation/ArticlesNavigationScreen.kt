@@ -20,6 +20,7 @@ fun ArticlesNavigationScreen(
 
     NavHost(navController = navController, startDestination = ArticlesRoute.Home) {
         composable<ArticlesRoute.Home> {
+
             ArticlesScreen(
                 onArticleClick = {
                     navController.navigate(

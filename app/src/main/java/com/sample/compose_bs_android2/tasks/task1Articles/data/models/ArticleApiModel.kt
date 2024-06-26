@@ -5,7 +5,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class Result(
+data class ArticleApiModel(
     @Json(name = "uri")
     val uri: String?,
     @Json(name = "url")
@@ -53,7 +53,7 @@ data class Result(
 )
 
 
-val dummyArticleItem = Result(
+val dummyArticleItem = ArticleApiModel(
     title = "This is the title of article",
     id = null,
     media = null,

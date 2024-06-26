@@ -9,14 +9,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sample.compose_bs_android2.tasks.task1Articles.data.models.Result
+import com.sample.compose_bs_android2.tasks.task1Articles.data.models.ArticleApiModel
 import com.sample.compose_bs_android2.tasks.task1Articles.data.models.dummyArticleItem
 
 @Composable
 fun ArticlesLazyColumn(
-    items: List<Result>,
+    items: List<ArticleApiModel>,
     modifier: Modifier = Modifier,
-    onItemClick: ((Result) -> Unit)? = null
+    onItemClick: ((ArticleApiModel) -> Unit)? = null
 ) {
     LazyColumn(
         modifier = modifier

@@ -13,5 +13,5 @@ data class PopularArticles(
     @Json(name = "num_results")
     val numResults: Int?,
     @Json(name = "results")
-    val results: List<Result?>?
+    val results: List<ArticleApiModel?>?
 )

@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sample.compose_bs_android2.tasks.task1Articles.data.ArticlesApi
 import com.sample.compose_bs_android2.tasks.task1Articles.data.models.PopularArticles
-import com.sample.compose_bs_android2.tasks.task1Articles.data.models.Result
+import com.sample.compose_bs_android2.tasks.task1Articles.data.models.ArticleApiModel
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.time.TimeUiModel
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.time.lastDay
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.time.lastMonth
@@ -62,10 +62,6 @@ class ArticlesViewModel(
         }
         _filters.value = list
         getArticles()
-    }
-
-    fun onArticleClick(item: Result) {
-
     }
 
     private fun getSelectedPeriod(): String {

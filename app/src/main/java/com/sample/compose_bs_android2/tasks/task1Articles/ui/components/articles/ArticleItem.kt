@@ -15,15 +15,15 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sample.compose_bs_android2.tasks.task1Articles.data.models.Result
+import com.sample.compose_bs_android2.tasks.task1Articles.data.models.ArticleApiModel
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.img.ArticleImg
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.img.imgArticleUrl
 
 @Composable
 fun ArticleItem(
-    item: Result,
+    item: ArticleApiModel,
     modifier: Modifier = Modifier,
-    onItemClick: ((Result) -> Unit)? = null,
+    onItemClick: ((ArticleApiModel) -> Unit)? = null,
 ) {
     Column(modifier = modifier
         .fillMaxWidth()
@@ -47,7 +47,7 @@ fun ArticleItem(
 @Composable
 private fun ArticleItemPreview() {
     ArticleItem(
-        Result(
+        ArticleApiModel(
             title = "This is the title of article",
             id = null,
             media = null,
