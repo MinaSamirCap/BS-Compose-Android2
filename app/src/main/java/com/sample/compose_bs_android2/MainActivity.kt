@@ -10,6 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
+import com.sample.compose_bs_android2.mine.lru.LeastRecentlyUsedScreen
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.navigationSuite.NavigationSuiteScreen
@@ -67,10 +68,11 @@ fun Main(
     //SolidPrincipleScreen()
     //PdfGeneratorScreen()
     //AnimationTypesScreen()
+    LeastRecentlyUsedScreen()
 
 
     //// Tasks ...
-    ArticlesNavigationScreen()
+    //ArticlesNavigationScreen()
 }
 
 @Preview
