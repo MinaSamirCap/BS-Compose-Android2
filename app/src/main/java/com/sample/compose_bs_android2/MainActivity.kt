@@ -12,6 +12,7 @@ import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.lru.LeastRecentlyUsedScreen
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
+import com.sample.compose_bs_android2.mine.mutex.MutualExclusionScreen
 import com.sample.compose_bs_android2.mine.navigation.NavigationSafeScreen
 import com.sample.compose_bs_android2.mine.navigationSuite.NavigationSuiteScreen
 import com.sample.compose_bs_android2.mine.pdf.PdfGeneratorScreen
@@ -68,7 +69,8 @@ fun Main(
     //SolidPrincipleScreen()
     //PdfGeneratorScreen()
     //AnimationTypesScreen()
-    LeastRecentlyUsedScreen()
+    //LeastRecentlyUsedScreen()
+    MutualExclusionScreen()
 
 
     //// Tasks ...
