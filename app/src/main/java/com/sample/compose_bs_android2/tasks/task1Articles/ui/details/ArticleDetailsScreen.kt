@@ -23,11 +23,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sample.compose_bs_android2.R
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.components.img.ArticleImg
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.navigation.ArticlesRoute
 import com.sample.compose_bs_android2.utils.IntentUtil
@@ -93,7 +95,7 @@ fun ArticleDetailsScreen(
 
             Spacer(modifier = Modifier.width(10.dp))
 
-            Text(text = "Open in Browser")
+            Text(text = stringResource(id = R.string.open_browser))
         }
 
     }

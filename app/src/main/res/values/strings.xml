@@ -3,4 +3,5 @@
     <string name="short_label">Waring</string>
     <string name="long_label">This is the waring message</string>
     <string name="disabled_message">This option is no longer available</string>
+    <string name="open_browser">Open in browser</string>
 </resources>
