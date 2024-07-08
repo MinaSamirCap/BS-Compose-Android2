@@ -70,6 +70,8 @@ dependencies {
     implementation(libs.androidx.compose.material3.adaptive.navigation)
     implementation(libs.androidx.compose.material3.adaptive.navigation.suits)
 
+    implementation(libs.androidx.biometric)
+
     implementation(libs.squareup.retrofit)
     implementation(libs.squareup.logger)
     implementation(libs.squareup.retrofit.moshi.converter)

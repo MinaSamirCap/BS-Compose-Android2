@@ -2,13 +2,14 @@ package com.sample.compose_bs_android2
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.fragment.app.FragmentActivity
 import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
+import com.sample.compose_bs_android2.mine.biometric.BiometricAuthScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.lru.LeastRecentlyUsedScreen
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
@@ -27,7 +28,7 @@ import com.sample.compose_bs_android2.tasks.task1Articles.ui.navigation.Articles
 import com.sample.compose_bs_android2.template.TemplateScreen
 import com.sample.compose_bs_android2.ui.theme.ComposeBSAndroid2Theme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
 
     var currentIntent: Intent? = null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -70,7 +71,8 @@ fun Main(
     //PdfGeneratorScreen()
     //AnimationTypesScreen()
     //LeastRecentlyUsedScreen()
-    MutualExclusionScreen()
+    //MutualExclusionScreen()
+    BiometricAuthScreen()
 
 
     //// Tasks ...
