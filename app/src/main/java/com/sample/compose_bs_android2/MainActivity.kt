@@ -22,6 +22,7 @@ import com.sample.compose_bs_android2.mine.pullToRefresh.PullToRefreshScreen
 import com.sample.compose_bs_android2.mine.shake.ShakeScreen
 import com.sample.compose_bs_android2.mine.sharedElement.SharedElementScreen
 import com.sample.compose_bs_android2.mine.shortcuts.ShortcutScreen
+import com.sample.compose_bs_android2.mine.sideEffects.SideEffectsScreen
 import com.sample.compose_bs_android2.mine.solid.SolidPrincipleScreen
 import com.sample.compose_bs_android2.mine.waterBottle.WaterBottleScreen
 import com.sample.compose_bs_android2.tasks.task1Articles.ui.navigation.ArticlesNavigationScreen
@@ -72,7 +73,8 @@ fun Main(
     //AnimationTypesScreen()
     //LeastRecentlyUsedScreen()
     //MutualExclusionScreen()
-    BiometricAuthScreen()
+    //BiometricAuthScreen()
+    SideEffectsScreen()
 
 
     //// Tasks ...
