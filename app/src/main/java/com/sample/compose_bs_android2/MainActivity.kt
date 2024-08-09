@@ -9,6 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.FragmentActivity
 import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
+import com.sample.compose_bs_android2.mine.ballAnimation.BallAnimationScreen
 import com.sample.compose_bs_android2.mine.biometric.BiometricAuthScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.lru.LeastRecentlyUsedScreen
@@ -74,7 +75,8 @@ fun Main(
     //LeastRecentlyUsedScreen()
     //MutualExclusionScreen()
     //BiometricAuthScreen()
-    SideEffectsScreen()
+    //SideEffectsScreen()
+    BallAnimationScreen()
 
 
     //// Tasks ...
