@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentActivity
 import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
 import com.sample.compose_bs_android2.mine.ballAnimation.BallAnimationScreen
 import com.sample.compose_bs_android2.mine.biometric.BiometricAuthScreen
+import com.sample.compose_bs_android2.mine.customShape.CustomShapeScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.lru.LeastRecentlyUsedScreen
 import com.sample.compose_bs_android2.mine.multiBackstack.MultiBackstackScreen
@@ -76,7 +77,8 @@ fun Main(
     //MutualExclusionScreen()
     //BiometricAuthScreen()
     //SideEffectsScreen()
-    BallAnimationScreen()
+    //BallAnimationScreen()
+    CustomShapeScreen()
 
 
     //// Tasks ...
