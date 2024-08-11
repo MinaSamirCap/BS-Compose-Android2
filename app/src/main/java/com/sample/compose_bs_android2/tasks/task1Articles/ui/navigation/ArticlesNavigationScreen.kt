@@ -56,4 +56,5 @@ private fun ArticlesNavigationScreenPreview() {
 
 /// references
 // type safe navigation with custom arguments
+// https://www.youtube.com/watch?v=qBxaZ071N0c
 // https://medium.com/@edmiro/type-safety-in-navigation-compose-23c03e3d74a5
