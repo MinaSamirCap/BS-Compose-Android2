@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.fragment.app.FragmentActivity
+import com.sample.compose_bs_android2.approches.oneTimeData.OneTimeDataScreen
 import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
 import com.sample.compose_bs_android2.mine.ballAnimation.BallAnimationScreen
 import com.sample.compose_bs_android2.mine.biometric.BiometricAuthScreen
@@ -80,7 +81,8 @@ fun Main(
     //SideEffectsScreen()
     //BallAnimationScreen()
     //CustomShapeScreen()
-    KeyboardFocusScreen()
+    //KeyboardFocusScreen()
+    OneTimeDataScreen()
 
 
     //// Tasks ...
