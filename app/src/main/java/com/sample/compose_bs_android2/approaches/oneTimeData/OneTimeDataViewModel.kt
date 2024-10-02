@@ -1,4 +1,4 @@
-package com.sample.compose_bs_android2.approches.oneTimeData
+package com.sample.compose_bs_android2.approaches.oneTimeData
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

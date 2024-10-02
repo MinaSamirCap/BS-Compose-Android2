@@ -1,4 +1,4 @@
-package com.sample.compose_bs_android2.approches.localComposition
+package com.sample.compose_bs_android2.approaches.localComposition
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,7 +10,7 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.sample.compose_bs_android2.approches.localComposition.componets.DisplayImageOfIsSpicyOrNot
+import com.sample.compose_bs_android2.approaches.localComposition.componets.DisplayImageOfIsSpicyOrNot
 
 @Composable
 fun LocalSpicyScreen(modifier: Modifier = Modifier) {
