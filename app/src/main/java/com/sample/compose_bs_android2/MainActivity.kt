@@ -14,6 +14,7 @@ import com.sample.compose_bs_android2.mine.animation.AnimationTypesScreen
 import com.sample.compose_bs_android2.mine.ballAnimation.BallAnimationScreen
 import com.sample.compose_bs_android2.mine.biometric.BiometricAuthScreen
 import com.sample.compose_bs_android2.mine.customShape.CustomShapeScreen
+import com.sample.compose_bs_android2.mine.customSwipe.CustomSwipeScreen
 import com.sample.compose_bs_android2.mine.keyboard.focus.KeyboardFocusScreen
 import com.sample.compose_bs_android2.mine.listDetails.ListDetailsWithNavigationScreen
 import com.sample.compose_bs_android2.mine.lru.LeastRecentlyUsedScreen
@@ -84,7 +85,8 @@ fun Main(
     //BallAnimationScreen()
     //CustomShapeScreen()
     //KeyboardFocusScreen()
-    SingleSnackbarScreen()
+    //SingleSnackbarScreen()
+    CustomSwipeScreen()
 
     //// Approaches ...
     //OneTimeDataScreen()
