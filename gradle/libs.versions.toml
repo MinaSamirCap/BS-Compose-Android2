@@ -13,6 +13,7 @@ composeAnimation = "1.7.0-beta02"
 composeNavigation = "2.8.0-beta02"
 material3Adaptive = "1.0.0-beta02"
 adaptiveNavigationSuite = "1.0.0-alpha07"
+credentials = "1.5.0-alpha04"
 biometric = "1.1.0"
 appcompat = "1.7.0"
 squareupRetrofit = "2.9.0"
@@ -45,6 +46,9 @@ androidx-compose-material3-adaptive-navigation = { module = "androidx.compose.ma
 androidx-compose-material3-adaptive-navigation-suits = { module = "androidx.compose.material3:material3-adaptive-navigation-suite", version.ref = "adaptiveNavigationSuite" }
 androidx-biometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
 androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+androidx-credentials-core = { group = "androidx.credentials", name = "credentials", version.ref = "credentials" }
+# In Android 13 or lower, credentials-play-services-auth is required when using androidx.credentials:credentials
+androidx-credentials-compat = { group = "androidx.credentials", name = "credentials-play-services-auth", version.ref = "credentials" }
 
 squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "squareupRetrofit" }
 squareup-retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "squareupRetrofit" }
